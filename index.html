@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase - E-Commerce Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">
+            Shop<span>Ease</span>̥̥
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <button class="cart-btn" id="cartButton">
+            🛒 Cart <span id="cartCount">0</span>
+        </button>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>Discover Products You'll Love</h1>
+
+            <p>
+                Shop the latest products at affordable prices.
+            </p>
+
+            <a href="#products" class="shop-btn">
+                Shop Now
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+
+        <div class="section-heading">
+
+            <h2>Our Products</h2>
+
+            <p>Explore our latest collection</p>
+
+        </div>
+
+
+        <!-- Filters -->
+        <div class="filters">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Search products..."
+            >
+
+            <select id="categoryFilter">
+
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+                <option value="shoes">Shoes</option>
+                <option value="accessories">Accessories</option>
+
+            </select>
+
+
+            <select id="sortFilter">
+
+                <option value="default">Sort By</option>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
+                <option value="name">Name: A-Z</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- Product Grid -->
+        <div class="product-grid" id="productGrid"></div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <h2>About ShopEase</h2>
+
+        <p>
+            ShopEase is a simple responsive e-commerce website
+            created using HTML, CSS and JavaScript.
+        </p>
+
+    </section>
+
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart">
+
+        <div class="cart-header">
+
+            <h2>Your Cart</h2>
+
+            <button id="closeCart">✕</button>
+
+        </div>
+
+
+        <div id="cartItems" class="cart-items">
+
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <h3>
+                Total:
+                ₹<span id="cartTotal">0</span>
+            </h3>
+
+            <button class="checkout-btn" id="checkoutButton">
+                Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 ShopEase. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
